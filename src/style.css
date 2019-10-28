@@ -1,9 +1,17 @@
+.weather-app {
+  border: 3px solid #9c9c9c;
+  border-radius: 15px;
+  padding: 20px 60px;
+  margin: 10px auto;
+  max-width: 800px;
+}
+
 .container-extra-style:hover {
   background-image: linear-gradient(to top, #f8f8f8 0%, #ecf8ff 100%);
 }
 
 .container {
-  max-width: 800px;
+  max-width: 600px;
 }
 
 .main-rain {
