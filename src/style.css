@@ -3,7 +3,7 @@
   border-radius: 15px;
   padding: 20px 60px;
   margin: 10px auto;
-  max-width: 800px;
+  max-width: 700px;
 }
 
 .container-extra-style:hover {
@@ -14,18 +14,9 @@
   max-width: 600px;
 }
 
-.main-rain {
-  margin-top: 10px;
-  max-width: 200px;
-}
-
-.text-inside {
-  margin-top: 20px;
-}
-
 h1 {
   color: #5ac3db;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 40px;
   font-family: "Raleway", sans-serif;
 }
@@ -37,21 +28,6 @@ h2 {
   line-height: 40px;
 }
 
-h3 {
-  color: #5ac3db;
-  font-size: 18px;
-  font-family: "Raleway", sans-serif;
-  text-align: center;
-  line-height: 40px;
-}
-
-h4 {
-  color: #878787;
-  font-size: 18px;
-  font-family: "Roboto Condensed", sans-serif;
-  text-align: center;
-  line-height: 40px;
-}
 p {
   color: #878787;
   font-size: 18px;
