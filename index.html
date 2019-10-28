@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather | Diana App</title>
+    <meta charset="UTF-8" />
+    <link href="src/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Condensed&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container container-extra-style ">
+        <div class="row">
+            <div class="col-sm">
+                <form id="search-form">
+                    <p> Find city: <input type="text" id="search-input" value="" placeholder="your city"> <input
+                            type="submit" value="Go"> </p>
+                </form>
+            </div>
+            <div class="col-sm">
+                <p id="current-date-time"> <span class="highlight-color">Monday</span> | 12 October 2019 | 22h57</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-extra-style ">
+        <div class="row">
+            <div class="col">
+                <img src="https://cdn1.imggmi.com/uploads/2019/10/8/cd9fc6e75ff828b212a3fc04885dd728-full.png"
+                    alt="star" class="main-rain" />
+            </div>
+            <div class="col">
+                <div class="text-inside">
+                    <h1>hello <strong><span id="city">LISBON</span></strong></h1>
+                    <h2>25º</h2>
+                    <h1 class="highlight-color"> weather: <span id="current-weather">CLEAR</span> </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row item-container">
+            <div class="col-sm-2">
+                <div class="icon-wrap">
+                    <h3>
+                        MON
+                    </h3>
+                    <img src="https://cdn1.imggmi.com/uploads/2019/10/8/d3027f9b14690578695e0eef932d0c3d-full.png"
+                        alt="Sun" class="icon-sun" />
+                    <h4>
+                        23º | 14º
+                    </h4>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="icon-wrap">
+                    <h3>
+                        TUE
+                    </h3>
+                    <img src="https://cdn1.imggmi.com/uploads/2019/10/8/d3027f9b14690578695e0eef932d0c3d-full.png"
+                        alt="Sun" class="icon-sun" />
+                    <h4>
+                        23º | 14º
+                    </h4>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="icon-wrap">
+                    <h3>
+                        WED
+                    </h3>
+                    <img src="https://cdn1.imggmi.com/uploads/2019/10/8/8badcb42d80e6acd8fa82e9f589d18f3-full.png"
+                        alt="rain" class="icon-sun" />
+                    <h4>
+                        23º | 14º
+                    </h4>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="icon-wrap">
+                    <h3>
+                        TUR
+                    </h3>
+                    <img src="https://cdn1.imggmi.com/uploads/2019/10/8/8badcb42d80e6acd8fa82e9f589d18f3-full.png"
+                        alt="rain" class="icon-sun" />
+                    <h4>
+                        23º | 14º
+                    </h4>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="icon-wrap">
+                    <h3>
+                        FRI
+                    </h3>
+                    <img src="https://cdn1.imggmi.com/uploads/2019/10/8/d3027f9b14690578695e0eef932d0c3d-full.png"
+                        alt="Sun" class="icon-sun" />
+                    <h4>
+                        23º | 14º
+                    </h4>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="icon-wrap">
+                    <h3>
+                        SAT
+                    </h3>
+                    <img src="https://cdn1.imggmi.com/uploads/2019/10/8/1a562f47d8c00d1f43281ba3e14f34a6-full.png"
+                        alt="Sun" class="icon-sun" />
+                    <h4>
+                        23º | 14º
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+<script src="/src/index.js"></script>
+
+</html>
