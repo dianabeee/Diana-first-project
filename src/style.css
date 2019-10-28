@@ -13,7 +13,7 @@
 .container {
   max-width: 600px;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: middle;
 }
 
 h1 {
@@ -26,7 +26,7 @@ h1 {
 h2 {
   font-family: "Roboto Condensed", sans-serif;
   color: #878787;
-  font-size: 30px;
+  font-size: 50px;
   line-height: 30px;
 }
 
