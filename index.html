@@ -19,34 +19,22 @@
 
   <body>
     <div class="weather-app">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                     <form id="search-form">
-                     <p>
-                     <input
-                    type="text"
-                    id="search-input"
-                     value=""
-                    placeholder=" Enter a city"
-                    />
-                    <input type="submit" value="Go" />
-                     </p>
-                     </form>
-                 </div>
-             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                 <div class="col-sm">
-                    <p id="current-date-time">
-                     <span class="highlight-color">Monday</span> | 12 October 2019 | 22h57
-                     </p>
-                 </div>
-            </div>
+      <form id="search-form" class="form-inline">
+        <input
+          type="text"
+          id="search-input"
+          placeholder=" Enter a city"
+          class="form-control"
+        />
+        <button type="submit" class="btn btn-dark">Search</button>
+      </form>
+
+      <p id="current-date-time">
+        <span class="highlight-color">Monday</span> | 12 October 2019 | 22h57
+      </p>
 
       <img
-        src="https://cdn1.imggmi.com/uploads/2019/10/8/cd9fc6e75ff828b212a3fc04885dd728-full.png"
+        src="http://openweathermap.org/img/wn/03d@2x.png"
         alt="star"
         class="main-rain"
       />
