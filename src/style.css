@@ -3,7 +3,7 @@
   border-radius: 8px;
   padding: 20px 20px;
   margin: 10px auto;
-  max-width: 700px;
+  max-width: 800px;
 }
 
 .container-extra-style:hover {
@@ -11,7 +11,7 @@
 }
 
 .container {
-  max-width: 600px;
+  max-width: 800px;
   justify-content: space-between;
   align-items: middle;
   text-align: left;
@@ -44,31 +44,12 @@ p {
 
 .form-control {
   display: inline-block;
-  width: 150px;
+  width: 50px;
   margin-right: 5px;
   vertical-align: middle;
 }
 .main-icon {
-  margin: -40px auto;
-}
-
-.icon-wrap {
-  border: 3px solid #9c9c9c;
-  border-radius: 15px;
-  text-align: center;
-}
-
-.icon-wrap:hover {
-  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
-}
-
-.item-container {
-  margin-right: -30px;
-  margin-left: -30px;
-}
-
-.icon-wrap img {
-  width: 60%;
+  padding: -40px;
 }
 
 .highlight-color {
