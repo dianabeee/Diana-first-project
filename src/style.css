@@ -2,7 +2,7 @@
   border: 1px solid #9c9c9c;
   border-radius: 8px;
   padding: 20px 20px;
-  margin: 10px auto;
+  margin: 30px auto;
   max-width: 800px;
 }
 
@@ -22,6 +22,7 @@
 h1 {
   color: #5ac3db;
   font-size: 24px;
+  font-weight: bold;
   line-height: 30px;
   font-family: "Raleway", sans-serif;
 }
@@ -39,7 +40,7 @@ p {
   font-size: 18px;
   font-family: "Roboto Condensed", sans-serif;
   text-align: left;
-  line-height: 40px;
+  line-height: 20px;
 }
 
 .form-control {
@@ -54,4 +55,8 @@ p {
 
 .highlight-color {
   color: rgb(243, 223, 41);
+}
+
+.description {
+  font-size: 20px;
 }

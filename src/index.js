@@ -55,7 +55,7 @@ function displayTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let h2 = document.querySelector("h2");
   h2.innerHTML = `${temperature}ºC`;
-  currentWeather.innerHTML = response.data.weather[0].main.toUpperCase();
+  currentWeather.innerHTML = response.data.weather[0].description.toUpperCase();
 }
 
 function search(event) {
