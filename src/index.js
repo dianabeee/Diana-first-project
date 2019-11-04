@@ -60,6 +60,11 @@ function displayTemperature(response) {
   precipitation.innerHTML = Math.round(response.data.main.humidity) + "%";
   let wind = document.querySelector("#Wind");
   wind.innerHTML = Math.round(response.data.wind.speed) + "km/h";
+  let icon = document.querySelector("#icon");
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function search(event) {
@@ -74,3 +79,11 @@ function search(event) {
 let currentWeather = document.querySelector("#current-weather");
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
+
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  alert("hey");
+}
+
+let fahrenheit = document.querySelector("#fahrenheit");
+fahrenheit.addEventListener("click", displayFahrenheitTemperature);
