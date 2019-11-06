@@ -70,9 +70,30 @@ function displayTemperature(response) {
   );
 }
 
+function formatHours(timestamp) {
+  let currentTime = new Date();
+  let hours = currentTime.getHours();
+  let minutes = currentTime.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  return `${hours}:${minutes}`;
+}
+
 function displayForecast(response) {
-  let forecastElement = document.querySelector("#forecast");
   console.log(response.data);
+  let forecastElement = document.querySelector("#forecast");
+  let forecast = response.data.list[0];
+  forecastElement.innerHTML = `
+  <div class="col-2">
+    <h3>${formatHours(forecast.dt)}</h3>
+    <img src="http://openweathermap.org/img/wn/${
+      forecast.weather[0].icon
+    }@2x.png" alt="icon" />
+    <div class="weather-forecast-temperature">
+    <strong>${Math.round(forecast.main.temp_max)}º </strong>|
+     ${Math.round(forecast.main.temp_min)}º</div>
+  </div>`;
 }
 
 function search(event) {
