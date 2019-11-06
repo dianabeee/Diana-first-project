@@ -70,6 +70,10 @@ function displayTemperature(response) {
   );
 }
 
+function displayForecast(response) {
+  console.log(response.data);
+}
+
 function search(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-input");
@@ -77,6 +81,9 @@ function search(event) {
   city.innerHTML = searchInput.value.toUpperCase();
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}&units=metric`;
   axios.get(url).then(displayTemperature);
+
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${searchInput.value}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 let currentWeather = document.querySelector("#current-weather");
