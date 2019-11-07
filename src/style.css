@@ -52,8 +52,8 @@ p {
 .main-icon {
   padding: -70px;
   display: block;
-  margin: 30 auto;
-
+  margin-top: -25px;
+  margin-left: 25px;
   height: 120px;
   width: 120px;
   vertical-align: middle;

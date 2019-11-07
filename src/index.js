@@ -71,7 +71,7 @@ function displayTemperature(response) {
 }
 
 function formatHours(timestamp) {
-  let currentTime = new Date();
+  let currentTime = new Date(timestamp);
   let hours = currentTime.getHours();
   let minutes = currentTime.getMinutes();
   if (minutes < 10) {
@@ -90,7 +90,7 @@ function displayForecast(response) {
     forecast = response.data.list[index];
     forecastElement.innerHTML += `
   <div class="col-2">
-    <h3>${formatHours(forecast.dt)}</h3>
+    <h3>${formatHours(forecast.dt_txt)}</h3>
     <img src="http://openweathermap.org/img/wn/${
       forecast.weather[0].icon
     }@2x.png" alt="icon" />
